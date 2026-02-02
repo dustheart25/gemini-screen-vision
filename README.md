@@ -1,8 +1,9 @@
-# 🖥️ Gemini Screen Vision
+# 🖥️ Gemini Screen Vision & Recorder
 
 [English](#-english-version) | [中文说明](#-中文说明)
 
-> **A lightweight, client-side screen mirroring tool designed for AI vision context.** > **一个轻量级的纯前端屏幕镜像工具，专为辅助 AI 获取视觉上下文而设计。**
+> **A smart, client-side screen mirroring & recording tool designed for AI vision context.**
+> **一个轻量级的纯前端屏幕镜像与录制工具，专为辅助 AI 获取视觉上下文及会议记录而设计。**
 
 ---
 
@@ -14,53 +15,61 @@
 ## 📖 English Version
 
 ### Introduction
-**Gemini Screen Vision** is a pure frontend web application that mirrors your screen, window, or browser tab into a clean webpage.
+**Gemini Screen Vision** is a pure frontend web application. It not only mirrors your screen for AI analysis (via PiP) but also features a **powerful local screen recorder** with smart compression modes.
 
-It is specifically designed to help AI models (like **Gemini in Chrome**) "see" other applications by using Picture-in-Picture (PiP) mode. By floating the mirror window, you can let the AI analyze your screen content in real-time without needing complex software.
+It helps you record meetings, demonstrate code, or share context with AI models like **Gemini**, all without installing any software.
 
 ### ✨ Key Features
-* **📡 Screen Mirroring**: Capture your entire screen, a specific app window, or a browser tab.
-* **📺 Picture-in-Picture (PiP)**: Pop the video out into a floating window that stays on top of other apps. Perfect for sharing context with AI sidebars.
-* **🔒 Privacy First**: Runs entirely in your browser using standard Web APIs (`getDisplayMedia`). **No data is uploaded to any server.** Your screen content never leaves your device.
-* **⚡ Zero Install**: Just open the webpage and run. No plugins or extensions required.
-* **⛶ Full Screen & Stop Control**: Easily maximize for detail or stop capturing with one click.
+* **📡 Screen Mirroring**: Real-time mirroring of screen, window, or tab.
+* **🎥 Local Recording**: Record your screen with **System Audio**. No server involved, saves directly to your disk as `.webm`.
+* **🧠 Smart Scenarios**: Choose from 3 recording modes to optimize file size:
+    * **📝 Meeting Mode**: Ultra-small file size (approx. 200MB/hour), perfect for text/PPT.
+    * **📺 Standard Mode**: Balanced quality for daily use.
+    * **🎬 Cinema Mode**: High bitrate for video and games.
+* **📺 Picture-in-Picture (PiP)**: Keep the screen floating on top for AI sidebars.
+* **🔒 Privacy First**: Runs entirely in your browser. **No data uploaded.**
 
 ### 🚀 How to Use
 1.  Open the [Live Demo](https://dustheart25.github.io/gemini-screen-vision/).
-2.  Click **"📡 Start Capture" (开始捕获)**.
-3.  Select the screen or window you want to mirror.
-4.  Click **"📺 PiP" (画中画)** to float the window.
-5.  Now you can continue working while the AI (or you) watches the floating monitor.
+2.  Click **"📡 Start Capture"** and select the content.
+    * *Tip: Check "Share system audio" if you want to record sound.*
+3.  Click **"🔴 Start Recording"**.
+4.  Select a **Scene Mode** (e.g., Meeting Mode) from the popup menu.
+5.  Click **"⏹️ Stop Recording"** to automatically save the video file.
 
 ---
 
 ## 🇨🇳 中文说明
 
 ### 项目简介
-**Gemini Screen Vision** 是一个无需安装、纯前端运行的网页版屏幕镜像工具。
+**Gemini Screen Vision** 是一款功能强大的纯前端屏幕工具。它不仅能将屏幕画面“镜像”给 AI 观看，还内置了**智能录屏功能**。
 
-它的开发初衷是为了解决 **Gemini in Chrome** 等浏览器内嵌 AI 无法直接读取其他软件画面的问题。通过这个工具，你可以将任何软件的界面“镜像”到浏览器的一个网页中，或者使用“画中画”模式悬浮显示，从而让 AI 能够轻松读取并分析屏幕内容。
+即使在没有安装 OBS 或会议录制权限的情况下，你也可以用它来录制长达数小时的高清会议、网课或操作演示，并根据场景自动压缩文件体积。
 
 ### ✨ 核心功能
-* **📡 屏幕/窗口镜像**：支持录制整个屏幕、单个应用程序窗口或 Chrome 标签页。
-* **📺 画中画悬浮 (PiP)**：将镜像画面以悬浮窗形式置顶显示，方便在与 AI 对话时作为视觉参考。
-* **🔒 隐私安全**：基于浏览器原生 WebRTC 技术，所有视频流仅在本地内存中传输，**绝不上传服务器**，安全无忧。
-* **⚡ 即开即用**：无需安装插件或客户端，打开网页即可使用。
-* **⛶ 完整控制**：支持全屏查看细节，提供一键停止捕获按钮。
+* **📡 屏幕镜像 & 投屏**：支持全屏、窗口或标签页的实时预览。
+* **🎥 本地视频录制**：支持录制**带系统声音**的视频，录制处理完全在本地内存完成，自动保存为 `.webm` 格式。
+* **🧠 智能场景模式**：点击录制时可选择三种模式，解决文件过大的问题：
+    * **📝 会议/文档模式**：极低码率，文字清晰，1小时视频仅约 200MB。
+    * **📺 通用清晰模式**：画质与体积的完美平衡。
+    * **🎬 影音/高动态模式**：原画级体验，适合录制游戏或视频。
+* **📺 画中画悬浮 (PiP)**：让画面悬浮在浏览器顶层，方便与 AI 对话时实时参考。
+* **🔒 隐私安全**：所有数据流仅在浏览器本地处理，**绝不上传任何服务器**。
 
 ### 🚀 使用方法
-1.  点击访问 [在线演示地址](https://dustheart25.github.io/gemini-screen-vision/)。
-2.  点击 **“📡 开始捕获”** 按钮。
-3.  在弹出的系统提示框中，选择你想要监视/镜像的窗口或屏幕。
-4.  （推荐）点击 **“📺 画中画悬浮”**，将画面独立出来。
-5.  现在你可以一边操作软件，一边让 AI 分析悬浮窗里的内容了。
+1.  访问 [在线演示地址](https://dustheart25.github.io/gemini-screen-vision/)。
+2.  点击 **“📡 开始捕获”** 选择共享内容。
+    * *注意：如需录制声音，请在系统弹窗左下角勾选“分享系统音频”。*
+3.  点击 **“🔴 开始录制”**。
+4.  在弹出的菜单中选择适合的模式（如：会议模式）。
+5.  录制结束后点击 **“⏹️ 停止录制”**，视频将自动下载到本地。
 
 ---
 
 ### 🛠️ Tech Stack / 技术栈
-* HTML5
-* CSS3
-* JavaScript (WebRTC / `navigator.mediaDevices.getDisplayMedia`)
+* **Core**: HTML5, CSS3, JavaScript
+* **APIs**: `getDisplayMedia` (Screen Capture), `MediaRecorder` (Recording), `Picture-in-Picture API`
+* **Codec**: VP9 / WebM
 
 ### 📄 License
 MIT License
